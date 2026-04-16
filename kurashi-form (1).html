@@ -866,7 +866,7 @@
 // ═══════════════════════════════════
 // 設定
 // ═══════════════════════════════════
-const GAS_URL = 'YOUR_GAS_WEB_APP_URL'; // ← ここにGASのデプロイURLを入れる
+const GAS_URL = ''; // ← ここにGASのデプロイURLを入れる
 
 const PRICES_LOW = {
   small_furniture: 2500,
@@ -1115,7 +1115,7 @@ function submitForm() {
 // GAS 送信
 // ═══════════════════════════════════
 async function sendToGAS(data) {
-  if (GAS_URL === 'YOUR_GAS_WEB_APP_URL') {
+  if (GAS_URL === '') {
     // 開発中はコンソールに出力してスキップ
     console.log('📤 送信データ:', data);
     return new Promise(r => setTimeout(r, 1200)); // ローディングのデモ
